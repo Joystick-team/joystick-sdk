@@ -4,7 +4,7 @@
   "description": "SDK for Joystick gaming platform",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "author": "",
   "license": "ISC",
