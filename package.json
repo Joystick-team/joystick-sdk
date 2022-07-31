@@ -2,11 +2,14 @@
   "name": "joystick-sdk",
   "version": "1.0.1",
   "description": "SDK for Joystick gaming platform",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\""
   },
   "author": "",
   "license": "ISC",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
