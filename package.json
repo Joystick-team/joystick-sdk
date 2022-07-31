@@ -1,6 +1,6 @@
 {
   "name": "joystick-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SDK for Joystick gaming platform",
   "main": "index.js",
   "scripts": {
