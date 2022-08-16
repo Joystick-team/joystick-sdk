@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"No test specified\""
   },
-  "author": "",
+  "author": "Joystick Labs",
   "license": "ISC",
-  "keywords": []
+  "keywords": [
+    "joystick",
+    "gaming"
+  ]
 }
