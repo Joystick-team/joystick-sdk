@@ -1,6 +1,4 @@
-const axios = require('axios')
-
-const baseUrl = 'https://api.joysticklabs.io/api/v1'
+const url = 'https://api.joysticklabs.io/api/v1/reward'
 
 export class JoystickReward {
   constructor(key) {
@@ -22,6 +20,27 @@ export class JoystickReward {
         throw new Error('Token amount must be greater than zero')
 
       if (!this.key || typeof key !== 'string') throw new Error('Invalid key')
-    } catch (error) {}
+
+      const data = {
+        key: this.key,
+        wallet_address: walletAddress,
+        token_amount: tokenAmount,
+      }
+
+      const config = {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }
+
+      const res = await fetch(url, config)
+
+      return await res.json()
+    } catch (error) {
+      return error
+    }
   }
 }
